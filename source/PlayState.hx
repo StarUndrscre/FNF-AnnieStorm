@@ -2952,11 +2952,11 @@ class PlayState extends MusicBeatState
 			switch(daRating)
 			{
 				case 'shit' | 'bad':
-					currentTimingShown.color = FlxColor.RED;
+					currentTimingShown.color = FlxColor.WHITE;
 				case 'good':
-					currentTimingShown.color = FlxColor.GREEN;
+					currentTimingShown.color = FlxColor.WHITE;
 				case 'sick':
-					currentTimingShown.color = FlxColor.CYAN;
+					currentTimingShown.color = FlxColor.WHITE;
 			}
 			currentTimingShown.borderStyle = OUTLINE;
 			currentTimingShown.borderSize = 1;
@@ -3870,6 +3870,12 @@ class PlayState extends MusicBeatState
 				FlxG.camera.zoom += 0.015;
 				camHUD.zoom += 0.03;
 			}
+			// wondering if this will work for storm too
+			if (curSong == 'Storm' && curBeat >= 128 && curBeat < 192 && camZooming && FlxG.camera.zoom < 1.35)
+			{
+				FlxG.camera.zoom += 0.015;
+				camHUD.zoom += 0.03;
+			}
 	
 		}
 
@@ -3887,6 +3893,11 @@ class PlayState extends MusicBeatState
 		if (!boyfriend.animation.curAnim.name.startsWith("sing"))
 		{
 			boyfriend.playAnim('idle');
+		}
+
+		if (dad.animation.curAnim.name.startsWith('sing') && dad.animation.finished)
+		{
+			dad.playAnim('idle');
 		}
 		
 		if (curStep == 252 && curSong == 'Storm')

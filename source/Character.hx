@@ -61,8 +61,9 @@ class Character extends FlxSprite
 				addOffset('scared', -2, -17);
 
 				playAnim('danceRight');
+				
 			case 'annie-bw':
-				tex = Paths.getSparrowAtlas('characters/annie_BW');
+				var tex = Paths.getSparrowAtlas('characters/annie_BW', 'shared');
 				frames = tex;
 				animation.addByPrefix('idle', "Pico Idle Dance", 24);
 				animation.addByPrefix('singUP', 'pico Up note0', 24, false);

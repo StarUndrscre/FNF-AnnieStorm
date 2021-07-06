@@ -48,8 +48,6 @@ class GameplayCustomizeState extends MusicBeatState
         sick = new FlxSprite().loadGraphic(Paths.image('sick','shared'));
         sick.scrollFactor.set();
         background = new FlxSprite(-600, -200).loadGraphic(Paths.image('stage/black','shared'));
-        curt = new FlxSprite(-500, -300).loadGraphic(Paths.image('blank','shared'));
-        front = new FlxSprite(-650, 600).loadGraphic(Paths.image('blank','shared'));
 
 		Conductor.changeBPM(102);
 		persistentUpdate = true;
@@ -61,12 +59,8 @@ class GameplayCustomizeState extends MusicBeatState
         FlxG.cameras.add(camHUD);
 
         background.scrollFactor.set(0.9,0.9);
-        curt.scrollFactor.set(0.9,0.9);
-        front.scrollFactor.set(0.9,0.9);
 
         add(background);
-        add(front);
-        add(curt);
 
 		var camFollow = new FlxObject(0, 0, 1, 1);
 
@@ -189,7 +183,7 @@ class GameplayCustomizeState extends MusicBeatState
         super.beatHit();
 
         bf.playAnim('idle');
-        dad.dance();
+        dad.playAnim('idle');
 
         FlxG.camera.zoom += 0.015;
         camHUD.zoom += 0.010;
