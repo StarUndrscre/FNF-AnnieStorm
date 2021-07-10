@@ -3,6 +3,10 @@
 
 
 # High Effort Storm
+**High Effort Storm** is a mod for FNF which adds a new song: Storm by Atsuover, and changes the visuals to a black and white theme inspired by the music video.
+
+Links: **GameBanana mod page (WILL ADD WHEN MOD IS ACTUALLY RELEASED) - [original song](https://www.youtube.com/watch?v=Mbby7d4VGkM)**
+
 ## Friday Night Funkin'
 **Friday Night Funkin'** is a rhythm game originally made for Ludum Dare 47 "Stuck In a Loop".
 
@@ -31,10 +35,10 @@ Links: **[GameBanana mod page](https://gamebanana.com/gamefiles/16761) ⋅ [play
 
 This game was made with love to Newgrounds and its community. Extra love to Tom Fulp.
 
-### High Effort Storm
-- [StarUndrscre](https://twitter.com/StarUnderscre_) - Coding, charting, FNF cover
-- [atsuover](https://twitter.com/atsuover) - Original song, Annie's sprites
-
 ### Kade Engine
 - [KadeDeveloper](https://twitter.com/KadeDeveloper) - Maintainer and lead programmer
 - [The contributors](https://github.com/KadeDev/Kade-Engine/graphs/contributors)
+
+### High Effort Storm
+- [StarUndrscre](https://twitter.com/StarUnderscre_) - Programmer
+- [atsuover](https://twitter.com/atsuover) - Music, Art
