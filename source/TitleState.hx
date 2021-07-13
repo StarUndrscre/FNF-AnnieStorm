@@ -224,7 +224,7 @@ class TitleState extends MusicBeatState
 		blackScreen = new FlxSprite().makeGraphic(FlxG.width, FlxG.height, FlxColor.BLACK);
 		credGroup.add(blackScreen);
 
-		credTextShit = new Alphabet(0, 0, "starundrscre\natsuover", true);
+		credTextShit = new Alphabet(0, 0, "ninjamuffin99\nPhantomArcade\nkawaisprite\nevilsk8er", true);
 		credTextShit.screenCenter();
 
 		// credTextShit.alignment = CENTER;
@@ -316,7 +316,7 @@ class TitleState extends MusicBeatState
 			{
 				// Get current version of Kade Engine
 				
-				var http = new haxe.Http("https://raw.githubusercontent.com/KadeDev/Kade-Engine/master/version.downloadMe");
+				var http = new haxe.Http("https://raw.githubusercontent.com/StarUndrscre/HighEffortStorm/master/version.downloadMe");
 				var returnedData:Array<String> = [];
 				
 				http.onData = function (data:String)
@@ -400,23 +400,23 @@ class TitleState extends MusicBeatState
 
 		switch (curBeat)
 		{
-			case 1:
+			case 2:
 				createCoolText(['starundrscre', 'atsuover']);
 			// credTextShit.visible = true;
 			case 3:
 				addMoreText('present');
 			// credTextShit.text += '\npresent...';
 			// credTextShit.addText();
-			case 4:
-				deleteCoolText();
 			// credTextShit.visible = false;
 			// credTextShit.text = 'In association \nwith';
 			// credTextShit.screenCenter();
+			case 4:
+				deleteCoolText();
 			case 5:
 				if (Main.watermarks)
 					createCoolText(['Kade Engine', 'by']);
 				else
-					createCoolText(['Storm', 'by']);
+					createCoolText(['Storm by']);
 			case 7:
 				if (Main.watermarks)
 					addMoreText('KadeDeveloper');
@@ -425,13 +425,12 @@ class TitleState extends MusicBeatState
 					addMoreText('Atsuover');
 				}
 			// credTextShit.text += '\nNewgrounds';
-			case 8:
-				deleteCoolText();
-				ngSpr.visible = false;
 			// credTextShit.visible = false;
 
 			// credTextShit.text = 'Shoutouts Tom Fulp';
 			// credTextShit.screenCenter();
+			case 8:
+				deleteCoolText();
 			case 9:
 				createCoolText([curWacky[0]]);
 			// credTextShit.visible = true;
